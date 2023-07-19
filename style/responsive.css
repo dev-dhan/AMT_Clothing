@@ -1,0 +1,388 @@
+:root {
+    --primary-color: #FF7F50;
+    --secondary-color: #3EB489;
+    --tertiary-color: #D3D3D3;
+    --additional-color: #FFFFFF;
+    --font-style: 'Montserrat Alternates', sans-serif;;
+    --padding: 60px;
+}
+
+
+
+@media only screen and (max-width:1280px) { 
+    .first-links ul {
+        column-gap: 15px;
+        justify-content: space-between;
+    }
+
+    }
+
+
+
+
+
+@media only screen and (max-width:900px) {
+
+    .welcome-page-main {
+        padding: 15px 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 60px;
+    }
+    
+
+    .hamburger .lines {
+        width: 30px;
+        height: 3px;
+        background-color: #FFFFFF;
+        margin-top: 5px;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        background-color: var(--tertiary-color);
+        height: 0px;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .nav-bar.actives {
+        height: 310px;
+    }
+
+    .active {
+        padding: 10px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto ;
+        text-align: center;
+        transition: 0.5s;
+        height: auto;
+        opacity: 0;
+    }
+    .nav-bar .active {
+        margin-bottom: 30px;
+    }
+
+    .nav-bar.actives ul {
+        opacity: 1;
+    }
+    .nav-bar ul li {
+        margin-bottom: 30px;
+    }
+
+    .hero-page-con {
+        flex-direction: column-reverse;
+        padding: 50px;
+    }
+
+    .hero-description-con {
+        height: auto;
+        width: 100%;
+    }
+
+    .hero-description-con h1 {
+        margin-top: 10px;
+        font-size: 40px;
+
+    }
+
+    .hero-description-con p {
+        margin-top: 10px;
+    } 
+
+    .hero-tablet{
+        display: block;
+    }
+
+    .second-links {
+        display: none;
+
+    }
+
+    .first-links {
+        width: 100%;
+    }
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 0;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(189, 45, 45);
+    }
+
+    .hero-page-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo-con {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 95px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background-color: var(--secondary-color);
+        transition: ease .5s;
+    }
+
+    .first-links {
+        display: flex;
+
+    }
+
+    .first-links ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        row-gap: 30px;
+    }
+
+    .top-link {
+        margin-top: 20px;
+    }
+
+    .tablet-link {
+        display: block;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .h-2 {
+        color: #FFFFFF;
+    }
+
+    /*FEATURE CSS STARTS HERE*/
+    .featured-con {
+        padding: 50px;
+
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .btn-buy {
+        margin-top: 20px;
+    }
+
+
+    .categories-con {
+        padding: 50px;
+      }
+  
+      .container {
+        grid-template-columns: repeat(2,1fr);
+      }
+  
+      .filterDiv img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .about-us {
+        flex-direction: column;
+        padding: 50px;
+      }
+
+      .about-us-desc {
+        width: 100%;
+      }
+
+      .about-us-img {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .poster {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .poster-desc {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .new-arrival {
+        font-size: 30px;
+      }
+
+      .discount {
+        font-size: 50px;
+      }
+
+      .tagline {
+        font-size: 25px;
+      }
+
+      
+    .poster-img {
+        width: 100%;
+    }
+  
+
+    .email-us-form-con {
+        padding: 50px;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .email-us-details-con {
+        width: 100%;
+    }
+  
+    .email-us-details-con .email-us-tagline {
+        font-size: 40px;
+    }
+  
+    .email-us-form {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:786px) {
+
+    .btn-categ {
+        font-size: 16px;
+    }
+    .filterDiv {
+        height: auto;
+        width: auto;
+    }
+
+    .filterDiv img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .about-us-con .circle-con {
+        align-items: end;
+        justify-content: start;
+    }
+
+    .about-us-con .circle {
+        margin-right: 15px;
+    }
+    .welcome-page-main {
+        padding: 15px 15px;
+    }
+
+    .hero-page-con {
+        padding: 0 15px;
+    }
+
+
+    .image-hero-con {
+        width: 400px;
+        height: 400px;
+    }
+
+    .featured-con {
+        padding: 50px 15px;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+    }
+
+    .feature-h {
+        font-size: 23px;
+    }
+
+    .categories-con {
+        padding: 50px 15px;
+      }
+      .container {
+        grid-template-columns: repeat(1,1fr);
+      }
+    
+      .categories-con .active {
+        font-size: 12px;
+        padding: 10px 15px;
+      }
+    
+      .categories-con .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+      }
+
+      .btn-categ {
+        font-size: 12px;
+      }
+
+      .about-us {
+        padding: 50px 15px;
+      }
+
+      .poster {
+        padding: 50px 15px;
+      }
+
+      .discount {
+        font-size: 40px;
+      }
+
+       
+    .email-us-form-con {
+        padding: 50px 15px;
+      }
+      
+      .email-us-details-con .email-us-tagline {
+        font-size: 35px;
+      }
+      
+      .email-us-details-con .email-us-content {
+        font-size: 14px;
+      }
+      
+      #submit {
+        padding: 15px;
+      }
+
+      #topBtn {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		opacity: .9;
+	}
+  
+
+}
